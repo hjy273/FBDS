@@ -1,0 +1,220 @@
+/*
+
+   ??????????????????????
+*/
+.firstContent{
+    width: 100%;
+}
+.firstContent > div{
+    float: left;
+    margin-left: 1.4%;
+}
+.firstContent .bmiNumberAnalysis > div,.firstContent .bmiAnalysis  > div{
+    height: 234px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 2px 0 6px #eee;
+}
+.firstContent > .bmiNumberAnalysis{
+    width:41%;
+}
+.firstContent .bmiAnalysis{
+    width:55% ;
+}
+
+/*????��?*/
+.bmiNumberAnalysis h2,.firstContent .bmiAnalysis h2,.secondContent h2{
+    padding: 17px 0;
+    font-size: 1.8rem;
+    color: #56626f;
+    font-weight: normal;
+}
+.bmiNumberAnalysis .bmiNumber > ul > li{
+    height: 58px;
+    line-height: 58px;
+    font-size: 1.4rem;
+    color: #56626f;
+}
+.bmiNumberAnalysis .bmiNumber > ul > li:last-child{
+    text-align: center;
+}
+.bmiNumberAnalysis .bmiNumber >  ul > li span{/*?????????????????*/
+    display: inline-block;
+    text-align: center;
+}
+.bmiNumberAnalysis .bmiNumber> ul > li span:first-child{
+    width: 21.74%;
+}
+.bmiNumberAnalysis .bmiNumber > ul > li input{/*?????????*/
+    width:47.76%;
+    height: 24px;
+    border-radius: 3px;
+    background: #f4f7f8;
+    border: 1px solid #ebebeb;
+    padding-left: 2%;
+}
+.mySelect{/*????????*/
+    width:49.76%;
+    height: 24px;
+    border-radius: 3px;
+    /*    background: #f4f7f8;*/
+    border: 1px solid #ebebeb;
+    color:#56626f ;
+}
+.calculateBmi{/*????bmi???*/
+    width: 25.4%;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.8;
+    position: relative;
+}
+.calculateBmi:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.calculateBmi:active {
+    left: 1px;
+    top: 1px;
+    opacity: 0.8;
+    outline: none; /* hide dotted outline in Firefox */
+}
+/*main*/
+#comment1{
+    /*border: 2px solid red;*/
+    width: 48%;
+    height: 400px;
+    /*margin: 100px auto 0;*/
+    margin-top: 4px;
+    margin-left: 0px;
+    /*margin-top: 0px;*/
+    background: papayawhip;
+}
+#comment2{
+    width: 50%;
+    height: 400px;
+    margin-right: 0px;
+    background: papayawhip;
+}
+#introduce{
+    width: 20%;
+    height: 260px;
+
+}
+#rank{
+    border: 2px solid papayawhip;
+    height: 260px;
+    width: 260px;
+    position: relative;
+}
+#rank>.rr{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+.introduce>div{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+#rank{
+    margin-left: 2%;
+}
+
+.introduce>div>div{
+    display: inline-block;
+}
+.searchGroups>div.input-prepend>ul:first-child{
+    display: block;
+    width: 100%;
+    height: 68px;
+}
+#introduce,#rank{
+    float: left;
+    display: block;
+}
+/*secondContent*/
+.secondContent{/*?????????????*/
+    clear: both;
+    width: 97.5%;
+    margin-left: 17px;
+}
+.secondContent >div{
+    height: 400px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 2px 0 6px #eee;
+}
+.secondContent .bmiShow{/*p??????*/
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #e4e6e9;
+    font-size: 1.6rem;
+    padding-left: 45px;
+    color: #df5d1c;
+}
+.secondContent > div > div{
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #e4e6e9;
+    color: #56626f;
+}
+.secondContent > div > div li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 1.4rem;
+    outline:1px solid #e4e6e9 ;
+}
+.secondContent > div > div li:hover{
+    background: rgba(60,68,84,0.15) ;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    margin: 4px 0;
+}
+.bootstrap-select.form-control:not([class*="col-"]) {
+    width: 47.76%;
+}
+.btn{
+    padding: 0;
+    padding-left: 4%;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    background: #f4f7f8;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+}
+.btn-default{
+    background: #f4f7f8;
+    border: 1px solid #ebebeb;
+}
+#comment1,#comment2{
+    display: inline-block;
+}
+.xx,.mm,.rate,.address,.phone{
+    text-align: center;
+}
+.comment{
+    margin-top: 4%;
+    padding: 24px;
+}
+.comment>div:first-child{
+}
+#comment1{
+    margin-right: 1.5%;
+}
+#introduce>li,#introduce>h4{
+    border-bottom: 1px solid #888888;
+    margin: 0 12px;
+    line-height: 50px;
+}

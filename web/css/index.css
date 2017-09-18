@@ -1,0 +1,460 @@
+/*
+   刘勇
+   用于调整首页的页面样式
+*/
+
+html{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+/*首页顶部菜单*/
+.topContent{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background:#00aaef ;
+}
+.topContent > div{
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    /*overflow: hidden;*/
+}
+.topContent .topLogo{/*logo*/
+    width: 12%;
+    color: #fff;
+    text-align: center;
+    background: #0b9bd6;
+}
+.topContent .topSearch{/*search*/
+    position: relative;
+    margin-left: 50px;
+    width: 420px;
+}
+.topContent .topSearch li{
+    float: left;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.topContent .topSearch li span{
+    margin-left: 30px;
+}
+.topContent .topSearch li:last-child span:last-child{
+    margin-left: 15px;
+}
+.topContent .topSearch i{/*搜索按钮*/
+    position: absolute;
+    right: 20px;
+    top: 0;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.topContent .topSearch i:hover{
+    opacity: 1;
+}
+.topContent .topRight{/*right  setting*/
+    float: right;
+    width: 240px;
+}
+.topContent .topRight > ul > li{
+    float: left;
+    width: 89px;
+    border-left: 1px solid #3fbff3;
+    color: #fff;
+}
+.topContent .topRight li:first-child{
+    text-align: center;
+}
+.iconSetting{/*setting  icon*/
+    color:#fff;
+    opacity: 1;
+    font-size: 2.6rem;
+    cursor: pointer;
+
+}
+.settingIconSpan{
+    display: inline-block;
+    animation: rotateSetIcon 4s linear infinite;
+}
+@keyframes rotateSetIcon {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+    transform: rotate(360deg);
+         }
+}
+/*.iconSetting:hover{
+
+}*/
+.topRight li:hover i{
+    opacity: 1;
+    transform: rotateY(360deg);
+    transition: all .5s linear;
+}
+.topContent .topRight .rightUser{
+    width: 149px;
+    position: relative;
+    font-size: 1.4rem;
+}
+.topContent .topRight .rightUser .userHeaderImg{/*default img*/
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.topContent .topRight .rightUser .userHeaderImg img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.topContent .topRight .userName,.topContent .topRight .logout{
+    position: absolute;
+    left: 55px;
+}
+.topContent .topRight .userName{
+    top:-10px;
+}
+.topContent .topRight .logout{/*退出登录按钮*/
+    top: 10px;
+    opacity: 0.8;
+}
+.topContent .topRight .logout:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.topContent .userSetting{/*setting 展开面板*/
+    position: absolute;
+    border-radius: 5px;
+    right:133px;
+    top: 75px;
+    width: 124px;
+    height: 80px;
+    box-shadow: 0 0 4px #ddd;
+    background: #fff;
+    z-index: 10000;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #abaeb5;
+    display: none;
+}
+.topContent .userSetting li{
+    height: 39px;
+    line-height: 39px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all .3s linear;
+}
+.topContent .userSetting li:first-child{
+    border-bottom: 1px solid #ebebeb;
+}
+.topContent .userSetting li:hover{/*鼠标移上对应的链接效果*/
+    opacity: 1;
+    transition: all .3s linear;
+}
+.topContent .userSetting li:before{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    top:4px;
+    background:#00aaef;
+    opacity:1;
+    transition: all .3s linear;
+}
+
+.topContent .userSetting li:hover:before{
+    opacity: 1;
+    height:36px;
+    transition: all .3s linear;
+}
+.topContent .userSetting li i{
+    font-size:2.2rem;
+    margin-right: 10px;
+}
+
+.userSetting .triangle{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: 999;
+    transform: rotate(45deg);
+    top: -11px;
+    left: 52px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+
+
+/*左侧菜单栏展示*/
+.leftContent{
+    display: inline-block;
+    width: 12%;
+    background:#3c4454;
+    height: 100%;
+    position: relative;
+    overflow-y:auto;
+}
+/*中间内容栏*/
+.mainContent{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 88%;
+    background:#f4f7f8;
+    z-index: 999;
+}
+.mainContent > .content{
+    width: 100%;
+    height: 100vh;
+}
+.mainContent > .content embed{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.mainContent .copyRight{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    text-align: left;
+    background-color: #fff;
+    width: 95%;
+    padding-left: 5%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.4rem;
+    color: #a5aab0;
+}
+
+
+.userInformation{/*个人信息弹出框*/
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+@keyframes scaleModel {/*放大的动画*/
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-webkit-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-moz-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-ms-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-o-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+.informationShow,.updatePassword{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 370px;
+    height: 240px;
+    margin: -120px -185px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.85);
+    display: none;
+    animation: scaleModel .2s ease-in;
+    -webkit-animation: scaleModel .2s ease-in;
+    -moz-animation: scaleModel .2s ease-in;
+    -ms-animation: scaleModel .2s ease-in;
+    -o-animation: scaleModel .2s ease-in;
+}
+
+.informationShow ul li,.updatePassword ul li{
+    height: 58px;
+    line-height: 58px;
+}
+.informationShow ul li h2,.updatePassword ul li h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.informationShow ul li span,.updatePassword ul li span{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    font-size: 1.4rem;
+    color: #3c4454;
+}
+.informationShow ul li span:last-child,.updatePassword ul li input{
+    width:224px;
+    margin-left: 20px;
+    padding-left:8px;
+    text-align: left;
+    background: #f4f7f8;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 5px;
+    color: rgba(60,68,84,0.65);
+    border: none;
+}
+.informationShow .cancelBtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.informationShow .cancelBtn:hover{
+    transform: rotate(90deg);
+    transition: all .3s linear;
+}
+
+
+.updatePassword li a{/*修改密码弹出框*/
+    display: inline-block;
+    height: 100%;
+    width: 185px;
+    text-align: center;
+    color: rgba(60,68,84,0.65);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.updatePassword li:last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    line-height: 48px;
+    border-top: 1px solid #ebebeb;
+}
+.updatePassword li a{
+    position: relative;
+}
+.updatePassword li a:first-child{
+    width: 184px;
+    border-right: 1px solid #ebebeb;
+    color: #00aaef;
+
+}
+.sureUpdatePass:active,.cancelUpdatePass:active{
+    left: 1px;
+    top: 1px;
+    opacity: 0.8;
+    outline: none; /* hide dotted outline in Firefox */
+}
+.updatePassword .inforTips{
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+.adminLogin > ul li .showBox{
+    background: #363e4e;
+
+}
+.adminLogin > ul li span{
+    display: inline-block;
+    width: 80%;
+    height: 100%;padding-left: 5px;
+    border-left: 1px solid #f4f7f8;
+}
+/*左侧菜单栏*/
+.adminLogin{
+/*    display: none;*/
+}
+.adminLogin,.gymnasiumLogin{
+    width: 100%;
+    font-size: 1.4rem;
+    color:#b1b3b8 ;
+}
+.gymnasiumLogin{
+/*    display: none;*/
+}
+.adminLogin p{
+    padding: 30px 10px;
+}
+.adminLogin > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #b1b3b8;;
+    text-decoration: none;
+}
+.adminLogin > ul  li,.gymnasiumLogin ul li{
+/*    height: 48px;*/
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+
+/*    background: #3c4454;*/
+}
+.adminLogin > ul li .showBox ul li{
+    text-align: left;
+    width: 70%;
+    padding-left: 30%;
+    position: relative;
+}
+.amc_left_san{
+    position: absolute;
+    top: 18px;
+    right: 0;
+}
+.adminLogin > ul  li:hover,.gymnasiumLogin ul li:hover{
+    background: #464d5b;
+    /*background: #f4f7f8;*/
+}
+.adminLogin > ul > li i:first-child{
+/*    transition: all .3s linear;*/
+}
+.adminLogin > ul > li:hover i:first-child{
+    transform: rotateY(360deg);
+    transition: all .5s linear;
+}
+#gymnasiumLoginHover{
+    background: #f4f7f8;
+}
+.adminLogin > ul > li i,.gymnasiumLogin ul li i{
+    position: absolute;
+    font-size: 1.6rem;
+    top: 0;
+}
+.adminLogin > ul > li i:first-child,.gymnasiumLogin ul li i:first-child{
+    left: 10px;
+    font-size: 2rem;
+}
+.adminLogin > ul > li .iconRight{
+    right: 10px;
+}
+.adminLogin > ul > div li{/*展开列表*/
+    background: #363e4e;
+}
+.gymnasiumLogin ul li:hover i:first-child{
+    transform: rotateY(360deg);
+    transition: all .6s linear;
+}

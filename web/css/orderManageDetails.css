@@ -1,0 +1,67 @@
+.dataShowList,.dataListMask{
+    border-radius: 5px;
+}
+#dataContent{
+    overflow: hidden;
+    width: 100%;
+}
+#dataContent > ul > li{
+    width: 47%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 3%;
+    font-size: 14px;
+    color: #333;
+}
+#dataContent{
+    position: relative;
+}
+.classFirst{
+    position: absolute;
+    width: 370px;
+    height: 237px;
+    right: 30px;
+    top: 27px;
+}
+#dataContent > ul > li label{
+    margin-left: 10px;
+    color: #888;
+}
+
+
+.cancel-order{/*取消订单按钮*/
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    clear: both;
+}
+.cancel-order-btn{
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+}
+.cancel-order-btn:active{
+    opacity: .8;
+    top: 1px;
+    left: 1px;
+}
+
+.return-btn{
+    color:  rgba(44,62,80,0.7);
+}
+.cancel-order-btn-change{
+    background: #ccc;
+    cursor: not-allowed;
+}
+.return-btn:hover{
+    color: #00aaef;
+}

@@ -1,0 +1,39 @@
+#removeClassContent{
+	width: 96%;
+	margin: 20px auto 0;
+}
+.saleTableCommon > ul > li{
+	width: 14.28%;
+	width:-moz-calc(100% /7); 
+	width:-webkit-calc(100% /7); 
+	width: calc(100% /7);
+	border-right: 1px solid #e4e6e9;
+}
+.saleTableCommon > ul > li:last-child{
+	border-right: none;
+}
+
+/* 查询和重置按钮 */
+.searchAndRest,.lookDetailsBtn{
+	display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background: #00aaef;
+    border-radius: 5px;
+    font-size: 12px;
+    /*float: right;*/
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-left: 10px;
+}
+.searchAndRest:hover,.lookDetailsBtn:hover{
+	opacity: .8;
+	color: #fff
+}
+#totalRecord{
+	color: #00aaef;
+}

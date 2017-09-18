@@ -1,0 +1,634 @@
+body{
+    background:#f4f7f8;
+}
+.box_reset{
+    background: #fff;
+    box-shadow: 2px 0 6px #ddd;
+    border-radius: 5px;
+}
+.topVipIncreaseShow{/*三个会员信息的展示*/
+    width: 100%;
+    padding-top: 48px;
+}
+.topVipIncreaseShow > div{
+    width: 21%;
+    float: left;
+    height: 235px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 2px 0 6px #eee;
+    margin-left: 4%;
+    position: relative;
+}
+.topVipIncreaseShow > div:first-child{
+    margin-left: 2%;
+}
+.topVipIncreaseShow > div > p{/*文字的提示显示*/
+    height: 60px;
+    line-height: 60px;
+    color: #333745;
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 1px solid #e6e8ec;
+}
+.topVipIncreaseShow > div > label{/*图标中间的统计数*/
+    position: absolute;
+    font-size: 1.8rem;
+    color: #333745;
+    display: inline-block;
+    width:100%;
+    height: 174px;
+    line-height: 174px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+.topVipIncreaseShow > div > div{/*图标的显示*/
+    width: 100%;
+    height: 174px;
+}
+.topVipIncreaseShow > div > p span{/*数字显示*/
+    margin-left: 10px;
+    font-weight: bold;
+}
+.topVipIncreaseShow  .allVipData > p >span{
+    color: #e5a24f;
+}
+.topVipIncreaseShow  .monthVipData > p >span{
+    color: #b5cd08;
+}
+.topVipIncreaseShow  .weekVipData > p >span{
+    color: #ea6928;
+}
+.topVipIncreaseShow  .finishTask > p >span{
+    color: #e5a24f;
+}
+
+
+
+.dataShowList{
+    clear: both;
+    margin:0 auto;
+    position: relative;
+    top: 45px;
+
+}
+
+.dataShowList,.testDataShowList{
+    width: 96%;
+    position: relative;
+    margin: 30px auto;
+
+}
+.searchGroups .input-group{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+.searchGroups .input-group > ul > li{/*搜索的组*/
+    float: left;
+    text-align: center;
+}
+.searchGroups .input-group .inputGroups{
+    width: 20.44%;
+}
+.searchGroups .input-group .inputGroups input{/*三个输入框*/
+    width: 50.06%;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4%;
+    margin-left: 2%;
+    background: #f4f7f8;
+    border-radius: 3px;
+    border: none;
+}
+.searchGroups .input-group .btnGroups{
+    width: 12.88%;
+    position: relative;
+}
+
+.searchGroups .input-group .btnGroups button{/*三个按钮*/
+    width: 70%;
+    height: 24px;
+    line-height: 24px;
+    background: #b1b8be;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+}
+.searchGroups .input-group .btnGroups button:active,.lookOver button:active{/*按钮按下的效果*/
+    left: 1px;
+    top: 1px;
+    opacity: 0.8;
+    outline: none; /* hide dotted outline in Firefox */
+}
+.searchGroups .input-group .btnGroups .searchBtn{
+    background: #00aaef;
+}
+
+.input-group .btnGroups .fileBtn{
+    display: inline-block;
+    width: 70%;
+    height: 24px;
+    position: absolute;
+    left: 15%;
+    top: 18px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+/*数据内容*/
+.dataContent{
+    width: 100%;
+}
+.dataContent > div{
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+}
+
+.dataContent .tableHead{
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    color:#3c4454 ;
+    background: #fbfbfc;
+}
+.dataContent .tableHead ul{
+    overflow: hidden;
+}
+.dataContent .tableHead ul li{
+    font-size: 1.4rem;
+    border-top: 1px solid #e4e6e9;
+    border-bottom: 1px solid #e4e6e9;
+    border-left: 1px solid #e4e6e9;
+}
+.dataContent .tableHead ul li:first-child{
+    border-left:none
+}
+.dataContent div > ul li{
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    width:11%;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e4e6e9;
+    border-left: 1px solid #e4e6e9;
+}
+.dataContent div > ul li:first-child{
+    border-left:none
+}
+/*移上字体图标*/
+.dataContent .tableContent{
+    background: transparent;
+}
+/*.dataContent .tableContent:hover{
+    cursor: pointer;
+    background:rgba(0,0,0,0.1);
+}*/
+.lookOver button{
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    color:#fff;
+    background: #00aaef;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+
+/*表尾*/
+.dataContent .tableBottom{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color:#3c4454 ;
+    background: #fbfbfc;
+}
+.dataContent .tableBottom ul li{
+    border: none;
+    float: left;
+    position: relative;
+    width: 50%;
+}
+.dataContent .tableBottom ul li:first-child{
+    width: 48%;
+    margin-left: 2%;
+    text-align: left;
+}
+.dataContent .tableBottom li label{
+    color: #00aaef;
+}
+
+
+.tcdPageCode{/*数据列表显示分页插件*/
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
+
+
+
+.detailsDataShow{/*体测数据详情展示*/
+    width: 100%;
+    clear: both;
+    margin-top: 48px;
+    display: none;
+/*    position: absolute;
+    top:-200px;
+    left: 0;*/
+    /*visibility: hidden;*/
+}
+
+.detailsDataShow .detailsDataShowHeader{
+    width: 96%;
+    margin: 0 auto;
+    height: 100px;
+}
+.detailsDataShow .detailsDataShowHeader > div{
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    float: left;
+    width: 20.7%;
+    color: #3c4454;
+}
+.detailsDataShow .detailsDataShowHeader > div:last-child{
+    border-right:none;
+    width: 58.3%;
+}
+.detailsDataShow .detailsDataShowHeader > div > ul >li{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 36px;
+}
+.detailsDataShow .detailsDataShowHeader > div ul li span{
+    margin-left: 40px;
+}
+
+#id_select{
+    float: right;
+    margin-left: 50px;
+}
+
+
+/*bodCompositionAnalysis 身体成分分析*/
+.bodCompositionAnalysis,.fatAnalysis,.muscleFatControl,.coachEvaluation,.docEvaluation{
+    clear: both;
+    margin-left: 2%;
+}
+.coachEvaluation textarea,.docEvaluation textarea{
+    border: none;
+    width: 620px;
+    height: 200px;
+    padding: 10px;
+}
+.muscleFatControlMain  .kcal_number > ul > li:first-child{
+    width: 60%;
+}
+.muscleFatControlMain  .kcal_number > ul > li:last-child{
+    width: 40%;
+}
+.bodCompositionAnalysis,.fatAnalysis{
+    width: 64.5%;
+    display: inline-block;
+}
+.bodCompositionAnalysis > p,.segmentalMuscle > p,.fatAnalysis > p,.segmentalFat >p,.muscleFatControl >p,.coachEvaluation > p,.docEvaluation >p{
+    height: 46px;
+    line-height: 46px;
+    font-size: 1.6rem;
+    color: #2c3e50;
+}
+.analysisContent{/*成分正文*/
+    width: 100%;
+    height:220px;
+}
+.analysisContent > div{
+    width: 16.1%;
+    height: 100%;
+    background: #fbfbfc;
+    float: left;
+}
+.analysisContent > div:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.analysisContent > div:nth-child(2){
+    width: 67.8%;
+    background: #fff;
+}
+.analysisContent > div:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*analysisContentFirst*/
+.analysisContent > div >div:first-child,.fatAnalysisLeft > div > p{
+    width: 100%;
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+}
+.analysisContentFirst > div,.fatAnalysisLeft > div:first-child > p{/*第一块内容*/
+    border-top-left-radius: 5px;
+}
+.analysisContentFirst > div,.analysisContentThird > div,.fatAnalysisLeft > div:first-child > p,.fatAnalysisLeft > div:last-child > p{
+    background: #9cd465;
+}
+.analysisContentFirst > ul >li,.analysisContentThird >ul> li{
+    height: 49px;
+    line-height: 49px;
+    width: 100%;
+    text-align: center;
+    color:#2c3e50;
+}
+
+.analysisContentSecond > div{/*第二块内容*/
+    height: 49px;
+    line-height: 49px;
+    width: 100%;
+    clear: both;
+}
+.analysisContentSecond .analysisContentSecondTitle ul{/*第二块title内容*/
+    width: 98%;
+    margin: 0 auto;
+}
+.analysisContentSecond .analysisContentSecondTitle li{
+    float: left;
+    text-align: center;
+    margin-left: 0.39%;
+}
+.analysisContentSecond .analysisContentSecondTitle li:first-child{
+    width: 33%;
+    background: #5ac1df;
+}
+.analysisContentSecond .analysisContentSecondTitle li:nth-child(2){
+    width: 16.5%;
+    background: #428bcb;
+}
+.analysisContentSecond .analysisContentSecondTitle li:last-child{
+    width: 49.33%;
+    background: #f3b140;
+}
+.analysisContentSecondContent > div:first-child{/*第二块中间内容区域*/
+    height: 30px;
+    line-height: 30px;
+    color:#2c3e50;
+}
+.analysisContentSecondContent > div:first-child li{/*第二块上面的数字*/
+    float: left;
+    width: 8.33%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.analysisContentSecondContent > div:last-child{/*次啊面的进度条*/
+    width:96%;
+    margin: 0 auto;
+    height: 10px;
+    border-radius: 5px;
+    background: #ebebeb;
+}
+.analysisContentSecondContent > div:last-child p{/*进度条*/
+
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00aaef;
+}
+.analysisContentSecondBottom ul li{/*第二块底部*/
+    float: left;
+    width: 48%;
+}
+.analysisContentSecondBottom ul li:first-child{
+    margin-left: 2%;
+}
+.analysisContentSecondBottom ul li:last-child span{
+    margin-left: 20%;
+}
+.analysisContentThird > div{/*第三块内容*/
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+
+/*节段肌肉*/
+.segmentalMuscle,.segmentalFat{
+    width: 25.5%;
+    display: inline-block;
+    margin-left: 23px;
+}
+.segmentalMuscleMain{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    /*    background:transparent url("../images/dataManage/peopleBackground.png") no-repeat center center;
+        position: relative;
+        z-index1: 999;*/
+}
+.segmentalMuscleMain > span{
+    text-align: center;
+    display: inline-block;
+    width: 76px;
+    height: 164px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin: -82px -38px;
+    background:transparent url("../images/dataManage/peopleBackground.png") no-repeat center center;
+}
+.segmentalMuscleMain > div{
+    float: left;
+    width: 48%;
+    margin-top: 4%;
+    margin-left: 4%;
+    height: 48%;
+    background: #5ac1df;
+}
+
+.segmentalMuscleMain > div ul li{
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+}
+.segmentalMuscleMain > div ul li:first-child{
+    font-size: 2rem;
+}
+.segmentalMuscleMain > div ul li:nth-child(2){
+    font-size: 1.2rem;
+}
+.segmentalMuscleMain > div:nth-child(1),.segmentalMuscleMain > div:nth-child(3){
+    margin-left: 0;
+    padding-left: 10px;
+}
+.segmentalMuscleMain > div:nth-child(1),.segmentalMuscleMain > div:nth-child(2){
+    margin-top: 0;
+}
+.segmentalMuscleMain > div:nth-child(2),.segmentalMuscleMain > div:nth-child(4){
+    padding-right: 10px;
+    text-align: right;
+}
+.segmentalMuscleMain .topLeft{/*左上方*/
+    border-top-left-radius: 5px;
+}
+.segmentalMuscleMain .topRight{/*右上方*/
+    background: #428bcb;
+    border-top-right-radius: 5px;
+}
+.segmentalMuscleMain .bottomLeft{/*左下方*/
+    border-bottom-left-radius: 5px;
+}
+.segmentalMuscleMain .bottomRight{/*右下方*/
+    border-bottom-right-radius: 5px;
+}
+
+.segmentalMuscleMain > span > span{/*躯干*/
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/*肥胖分析*/
+.fatAnalysis{
+    float: left;
+}
+
+.fatAnalysis >div{/*肥胖分析*/
+    float: left;
+    height: 220px;
+}
+.fatAnalysisLeft{
+    width: 55%;
+}
+.fatAnalysisLeft > div{/*肥胖分析的具体内容*/
+    float: left;
+    width: 28.6%;
+}
+/*肥胖分析左侧展示值*/
+.fatAnalysisLeft div:first-child{
+    background:#fbfbfc ;
+}
+.fatAnalysisLeft div > ul >li{
+    height: 49px;
+    line-height: 49px;
+    width: 100%;
+    text-align: center;
+    color:#2c3e50;
+}
+
+.fatAnalysisLeft > div:nth-child(2){
+    width: 42.8%;
+}
+.fatAnalysisLeft > div:nth-child(2) p{
+    width: 96%;
+    margin-left: 2%;
+    background: #428bcb;
+}
+.fatAnalysisLeft > div:last-child > p{
+    border-top-right-radius: 5px;
+}
+.fatAnalysisRight{/*参考表*/
+    width: 42%;
+    margin-left: 3%;
+}
+.fatAnalysisRight > div{
+    width: 100%;
+    height: 63px;
+    margin-top: 15px;
+}
+.fatAnalysisRight > div:first-child{
+    margin-top: 0;
+}
+.fatAnalysisRight > div >ul >li{
+    height: 100%;
+    line-height: 63px;
+    float: left;
+}
+.fatAnalysisRight > div >ul >li:first-child{
+    margin-left: 30px;
+    margin-top: 13px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    background: #00aaef;
+    color: #fff;
+}
+.fatAnalysisRight > div >ul >li:nth-child(2),.fatAnalysisRight > div >ul >li:nth-child(3){
+    color: #a5a5a5;
+    margin-left: 10px;
+}
+.fatAnalysisRight > div >ul >li:nth-child(3){
+    width: 57.7%;
+}
+.fatAnalysisRight > div >ul >li:nth-child(3)>span{
+    display: block;
+    width:100%;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+.fatAnalysisRight > div >ul >li:nth-child(3)>span:first-child{
+    border-bottom: 1px solid  #dadcdf;
+}
+.segmentalFat .segmentalMuscleMain > div{/*节段脂肪*/
+    background: #f3b140;
+}
+.segmentalFat .segmentalMuscleMain .topRight{/*节段脂肪*/
+    background: #428bcb;
+}
+
+
+.muscleFatControlMain > div{/*肌肉脂肪控制*/
+    float: left;
+    width: 306px;
+    height: 44px;
+    line-height: 44px;
+}
+.muscleFatControlMain > div > ul >li{
+    float: left;
+    height: 100%;
+    line-height: 44px;
+    background: #fff;
+    text-align: center;
+}
+.muscleFatControlMain > div > ul >li:first-child{
+    width: 124px;
+    background: #f9f9fa;
+}
+.muscleFatControlMain > div > ul >li:last-child{
+    width: 182px;
+}
+.muscleFatControlMain > div:last-child{
+    margin-left: 10px;
+}
+
+.coachEvaluation .coach_import_btn,.docEvaluation .doc_import_btn{
+    width: 620px;
+    text-align: right;
+}
+.coachEvaluation .coach_import_btn button,.docEvaluation .doc_import_btn button{
+    width: 114px;
+    height: 26px;
+    line-height: 26px;
+    background: #ccc;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    color: #fff;
+    position: relative;
+}
+.coachEvaluation .coach_import_btn button:active,.docEvaluation .doc_import_btn button:active{
+    opacity: 0.8;
+    top: 1px;
+    left: 1px;
+}

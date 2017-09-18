@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery bootstrap-select��������ѡ�����б���</title>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="select/bootstrap-select.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="select/bootstrap-select.css">
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<select id="id_select" class="selectpicker bla bla bli" multiple data-live-search="true">
+    <option>cow</option>
+    <option>bull</option>
+    <option>ASD</option>
+    <option selected>Bla</option>
+    <option>Ble</option>
+</select>
+<script type="text/javascript">
+    $(window).on('load', function () {
+        $('.selectpicker').selectpicker({
+            'selectedText': 'cat'
+        });
+    });
+</script>
+</body>
+</html>

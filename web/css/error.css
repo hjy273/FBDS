@@ -1,0 +1,66 @@
+.amc_error_box{
+    width:100% ;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+
+}
+.amc_error_box_content{
+    background: url("../images/amc_error_bg.png") no-repeat 20px center;
+    width: 100%;
+    height: 100vh;
+    background-size:100%;
+    animation: error_bg_move 4s linear infinite;
+}
+.amc_error_tips{
+    position: absolute;
+    bottom: 180px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #999999;
+}
+.amc_error_return{
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    background: #4bc2f4;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    font-size: 1.4rem;
+    width: 154px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    margin: -19px -77px;
+    cursor: pointer;
+}
+.amc_error_return:active{
+    margin: -18px -76px;
+    opacity: 0.8;
+}
+.amc_error_title{
+    display: inline-block;
+    transform: rotate(-11deg);
+    letter-spacing: 1px;
+    font-size:4.5vw;
+    color: #fff;
+    position: absolute;
+/*    top: 22.2vh;
+    left: -6.2%;*/
+}
+
+@keyframes error_bg_move {
+    0%{
+        transform: rotate(0deg);
+    }
+    33.3%{
+        transform: rotate(10deg);
+    }
+    66.6%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

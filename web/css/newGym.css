@@ -1,0 +1,124 @@
+body{
+    background: #f4f7f8;
+}
+.amc-new-gymContent{/*新增列表数据的内容板块*/
+    width: 96%;
+    position: relative;
+    background: #fff;
+    box-shadow: 2px 0 6px #ddd;
+    border-radius: 5px;
+    margin:0 auto;
+    height: 860px;
+    overflow: hidden;
+}
+.amc-new-gymContent > ul > li{
+    float: left;
+    width: 49%;
+    padding-left: 1%;
+    text-align: left;
+    height: 44px;
+    line-height: 44px;
+}
+.amc-new-gymContent >ul > li > span,.amc-new-gymMap >span{
+    display: inline-block;
+    width: 100px;
+}
+.amc-new-gymContent >ul > li >input,.amc-new-gymContent >ul > li >select,.bootstrap-select > .dropdown-toggle,.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+    width: 220px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 1%;
+    margin-left: 2%;
+    background: #f4f7f8;
+    border-radius: 3px;
+    border: none;
+    color: #666;
+}
+#input{
+    height: 24px;
+    line-height: 24px;
+    padding: 0 5px;
+    margin-left: 2%;
+    background: #f4f7f8;
+    border-radius: 3px;
+    border: none;
+    display: inline-block;
+}
+.bootstrap-select > .dropdown-toggle,.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+    padding: 0;
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option{
+    padding-left: 10%;
+}
+.amc-new-gymContent >ul > li label{
+    display: inline-block;
+    margin-left: 4%;
+    color: rgba(0,0,0,0.65);
+}
+
+.amc-gym-map{
+    position: absolute;
+    left: 140px;
+    top: 300px;
+    height:500px ;
+}
+#container{
+    width: 1000px;
+    height:500px ;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.amc-gym-map #myPageTop{
+    position: relative;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+
+.amc-new-gymBtn{/*确定按钮*/
+    clear: both;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.amc-new-gymBtn-tip{
+    color: red;
+    font-size:12px ;
+    margin-bottom: 20px;
+}
+.amc-new-gymBtn > button{
+    width: 200px;
+    height: 32px;
+    background:#00aaef ;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+}
+.amc-new-gymBtn > button:active{
+    opacity: 0.8;
+    left: 1px;
+    top: 1px;
+}
+
+
+.amc-new-gymContent >ul > li .gymEquipmentCheckbox{
+    width: 16px;
+    position: relative;
+    top: -2px;
+}
+
+input[type="file"]{
+    display: inline-block;
+}
+
+
+#preview img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

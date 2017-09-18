@@ -1,0 +1,178 @@
+.biggest{/*最大的盒子背景*/
+    width: 100%;
+    height: 100vh;
+    background: url("../images/login/main_bg.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+}
+.left_content{
+    width: 780px;
+    height: 100vh;
+    text-align: center;
+    /*     background: url("../images/login/main_ball1.png") no-repeat 160px;
+        background-size: 380px 334px; */
+}
+.left_content h2{
+    font-weight: normal;
+    color: #00aaef;
+    padding-top: 80px;
+    margin-left: -20px;
+}
+.left_content h2 span{
+    color: #f39800;
+}
+.left_content .main_yun{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.loginBtn{/* 重置按钮 */
+    display: inline-block;
+    position:relative;
+    top:4px;
+    left:160px;
+    font-size:24px;
+    transition:all .3s linear;
+    opacity:0.7;
+    color:#b0b1b1;
+}
+.loginBtn:hover{
+    transition:all .3s linear;
+    opacity:1;
+}
+.start{
+    display: inline-block;
+    position:relative;
+    top:4px;
+    left:160px;
+    font-size:24px;
+    transition:all .3s linear;
+    opacity:0.7;
+    color:#b0b1b1;
+}
+.start:hover{
+    transition:all .3s linear;
+    opacity:1;
+}
+input{
+    font-size:1.6rem;
+    color: rgba(136,153,166,1);
+}
+.main_ball{
+    position: absolute;
+    left: 160px;
+    width:30.02%;
+}
+
+.main_ball img{
+    width:90%;
+    transition: all .3s ease;
+}
+.main_ball img:hover{
+    transform: scale(1.05);
+    transition: all .3s ease;
+
+}
+.amc_login{
+    position: absolute;
+    z-index: 22;
+    right: 181px;
+    text-align: center;
+    width: 360px;
+    height: 370px;
+    top:50%;
+    margin-top:-185px;
+}
+
+.amc_copyRight{
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 80px;
+    right: 235px;
+}
+.login_Content{/*中间内容位置*/
+    width: 360px;
+    height: 370px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px  6px #00aaef;
+    text-align: center;
+
+}
+
+.login_Content h2{
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+    padding-left: 32px;
+    font-size: 1.8rem;
+    color: #00aaef;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.login_Content h2 img{
+    vertical-align: middle;
+}
+.login_Content ul{
+    margin-top: 24px;
+}
+.login_Content li{
+    height: 75px;
+    line-height: 75px;
+    position: relative;
+}
+.login_Content li input{
+    width: 252px;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 40px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+.login_Content li img{
+    position: absolute;
+    left: 45px;
+    top: 27px;
+}
+.two_btns{
+    width: 292px;
+    margin: 0 auto;
+    height: 120px;
+    line-height: 120px;
+    position: relative;
+}
+
+.two_btns button{
+    width: 130px;
+    height: 46px;
+    border-radius: 5px;
+    background: #00aaef;
+    border: none;
+    color: #fff;
+    font-family: "Microsoft Yahei", simhei, verdana;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+}
+.two_btns button:first-child{
+    left: 0;
+}
+.two_btns button:last-child{
+    right: 0;
+}
+.two_btns button:active{
+    margin-top: 1px;
+    margin-left: 1px;
+    opacity: 0.8;
+}
+p{
+    width: 100%;
+    position: absolute;
+    top: 86px;
+    text-align: center;
+    color: red;
+}
+

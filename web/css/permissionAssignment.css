@@ -1,0 +1,65 @@
+/*数据内容*/
+.dataContent{
+    width: 100%;
+}
+.dataContent > div{
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+}
+
+.dataContent .tableHead{
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    color:#3c4454 ;
+    background: #fbfbfc;
+}
+.dataContent .tableHead ul{
+    overflow: hidden;
+}
+.dataContent .tableHead ul li{
+    font-size: 1.4rem;
+    border-top: 1px solid #e4e6e9;
+    border-bottom: 1px solid #e4e6e9;
+    border-left: 1px solid #e4e6e9;
+}
+.dataContent .tableHead ul li:first-child{
+    border-left:none
+}
+.dataContent div > ul li{
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    width:11%;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e4e6e9;
+    border-left: 1px solid #e4e6e9;
+}
+.dataContent div > ul li:first-child{
+    border-left:none
+}
+/*移上字体图标*/
+.dataContent .tableContent{
+    background: transparent;
+}
+/*.dataContent .tableContent:hover{
+    cursor: pointer;
+    background:rgba(0,0,0,0.1);
+}*/
+.lookOver button{
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    color:#fff;
+    background: #00aaef;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.content_wrap{
+    display: none;
+}

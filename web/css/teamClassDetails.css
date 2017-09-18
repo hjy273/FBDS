@@ -1,0 +1,24 @@
+.dataShowList,.dataListMask{
+    border-radius: 5px;
+}
+#dataContent > ul > li{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 3%;
+    font-size: 14px;
+    color: #333;
+}
+#dataContent{
+    position: relative;
+}
+.classFirst{
+    position: absolute;
+    width: 370px;
+    height: 237px;
+    right: 30px;
+    top: 27px;
+}
+#dataContent > ul > li label{
+    margin-left: 10px;
+    color: #666;
+}

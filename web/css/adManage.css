@@ -1,0 +1,160 @@
+.dataContent div > ul li{
+    width:16.6%;
+}
+.dataShowList {
+    top: 0;
+}
+
+.amc_popup,.amc_popup_content{
+    /*display: block;*/
+}
+.classTypeName{
+    width: 60.06%;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4%;
+    margin-left: 5%;
+    background: #f4f7f8;
+    border-radius: 3px;
+    border: none;
+}
+
+.amc_popup_content .classTypeTitle{
+    width: 100%;
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    top:30px;
+    left: 0;
+}
+.lookOver  button{
+    cursor: pointer;
+}
+.newClassType{
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background: #00aaef;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 16px 20px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+.newClassType:active{
+    top: 1px;
+    left: 1px;
+    opacity: .8;
+}
+.searchGroups .input-group .inputGroups{
+    width: 280px;
+    margin-left: 20px;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+    margin-left: 10px;
+}
+
+
+.classUse{
+    color:#00aaef;
+}
+.classForbid{
+    color:#eb6100;
+}
+
+
+.classTypeQueryBtn{
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.classTypeQueryBtn:active{
+    left: 1px;
+    top: 1px;
+    opacity: .8;
+}
+.exit{
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+    margin-left: 1100px;
+    cursor: pointer;
+}
+.exit:active{
+    left: 1px;
+    top: 1px;
+    opacity: .8;
+}
+.exit1{
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+    margin-left: 1200px;
+    cursor: pointer;
+}
+.exit1:active{
+    left: 1px;
+    top: 1px;
+    opacity: .8;
+}
+.classTypeQueryShop{
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+    margin-left: 40px;
+    /*margin-right: 0px;*/
+    cursor: pointer;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.classTypeQueryShop:active{
+    left: 1px;
+    top: 1px;
+    opacity: .8;
+}
+.classTypeQueryDetail{
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+    margin-left: 1300px;
+    /*margin-right: 0px;*/
+    cursor: pointer;
+}
+.classTypeQueryDetail:active{
+    left: 1px;
+    top: 1px;
+    opacity: .8;
+}

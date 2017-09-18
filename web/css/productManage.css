@@ -1,0 +1,181 @@
+.userTitle{
+    font-size: 14px;
+}
+#removeClassContent,.newProductContent{
+	width: 96%;
+	margin: 20px auto 50px;
+}
+#saleManageHeader{
+    height: 80px;
+}
+#saleManageHeader >ul >li{
+    width: 25%;
+    width:-moz-calc(100% /4); 
+    width:-webkit-calc(100% /4); 
+    width: calc(100% /4);
+}
+.saleTableCommon > ul > li{
+	width: 16.66%;
+	width:-moz-calc(100% /6); 
+	width:-webkit-calc(100% /6); 
+	width: calc(100% /6);
+	border-right: 1px solid #e4e6e9;
+}
+.saleTableCommon > ul > li:last-child{
+	border-right: none;
+}
+
+/* 查询和重置按钮 */
+.searchAndRest,.lookDetailsBtn{
+	display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background: #00aaef;
+    border-radius: 5px;
+    font-size: 12px;
+    /*float: right;*/
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-left: 10px;
+}
+.deleteDataBtn{
+    background: #eb6100;
+}
+.searchAndRest:hover,.lookDetailsBtn:hover{
+	opacity: .8;
+	color: #fff
+}
+#totalRecord{
+	color: #00aaef;
+}
+
+/* 新增产品 */
+.newProductContent .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 20%;
+    margin-left: 3%;
+}
+.newProductContent{
+    background: #fff;
+    height: 1200px;
+
+}
+.newProductContent > .newProductList{
+    line-height: 50px;
+}
+.newProductContent > .newProductList > ul >li{
+    float: left;
+    width: 85%;
+    line-height: 50px;
+    font-size: 14px;
+}
+.newProductContent > .newProductList > ul >li:first-child{
+    width: 12%;
+    text-align: right;
+}
+
+/* 重置输入框样式 */
+.newProductContent select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+    height: 34px;
+}
+.newProductContent .hero-unit{
+    padding:30px;
+    margin-left: 3%;
+
+}
+.newProductContent .htmleaf-container{
+    margin-left: 3%
+}
+.newProductContent .form-control{
+    position: relative;
+    top: 8px;
+}
+.productName,.productAtr{
+    width: 20%;
+    padding-left: 1%;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgba(0,0,0,.3);
+    text-align: left;
+    border-radius: 5px;
+    margin-left: 3%;
+    color: #333;
+}
+.productAtr{
+    width: 40%;
+    height: 200px;
+}
+
+#editor{
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 4px;
+    box-sizing: content-box;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: scroll;
+    outline: none;
+}
+
+/* 保存按钮 */
+.saveDataBtn{
+    text-align: center;
+}
+#saveDataBtn{
+    width: 144px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    background: #00aaef;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#saveDataBtn:hover{
+    opacity: .8
+}
+
+.amc_popup,.amc_popup_content{
+    display: block;
+}
+#removeClassManagePop{
+    width: 600px;
+    margin: -20% -300px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    height: auto;
+}
+#removeClassManagePop p{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background: #fcfcfd
+}
+.removeContentBox{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.1)
+}
+.removeContentBox li{
+    float: left;
+    padding: 18px 1%;
+}
+.removeContentBox .fist{
+    width: 33.33%
+}
+.removeContentBox .second{
+    width: 50%;
+}

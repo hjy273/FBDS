@@ -1,0 +1,30 @@
+.dataContent div > ul li{
+    width: 19.9%;
+}
+.searchGroups .input-group > ul > li{
+    float: right;
+}
+.lookOver button{
+    background: #eb6100;
+}
+.lookOver .user_edit_btn{
+    background: #00aaef;
+}
+
+
+.newAndUpdateContent {
+    height: 350px;
+    width: 556px;
+    margin: -175px -278px;
+    display: none;
+}
+.newAndUpdateContent_same {
+    height: 60px;
+    line-height: 60px;
+}
+
+.dataContent div > ul .resource_list_show{
+    overflow-x: auto;
+    overflow-y: hidden;
+    line-height: 36px;
+}

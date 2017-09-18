@@ -1,0 +1,62 @@
+#supplementBox > ul >li .classInput{
+    width: 570px;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,.1);
+    background: none;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+#supplementBox > ul >li textarea{
+    width: 570px;
+    padding: 5px;
+    height: 128px;
+}
+#supplementBox > ul >li #classTips{
+    height: 60px;
+}
+
+
+.inputCheck{/*福选课*/
+    position: relative;
+    width: 14px;
+    top: -3px;
+}
+.show-class{
+    margin-left: 13%;
+    margin-top: 20px;
+}
+.show-class > button{
+    width: 90px;
+}
+
+
+
+.imagesShow ul li img{
+    width: 50%;
+    height: 100%;
+}
+
+.labelBox{
+    display: inline-block;
+    padding: 0 10px;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+.labelBox img{
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+    visibility: hidden;
+}
+.labelBox:hover img{
+    visibility: visible;
+}

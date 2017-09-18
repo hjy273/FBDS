@@ -1,0 +1,195 @@
+#newSchedule{/*最大的div*/
+    width: 96%;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+#newSchedule > div{/*星期条目*/
+    float: left;
+    width: 14.28%;
+}
+#newSchedule > div > p{
+/*    border-bottom: 1px solid rgba(0,0,0,.1);*/
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background:#fbfbfc;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/*#newSchedule > div:nth-child(2n){
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-left: 1px solid rgba(0,0,0,.1);
+}*/
+/*.newSchedule-day{
+
+}
+.newSchedule-day01{
+    border-right: none;
+    border-left: none;
+}*/
+.newSchedule-day > ul > li{/*新建课程*/
+    width: 100%;
+    height: 100px;
+    line-height: 0;
+    text-align: center;
+/*    outline: 1px solid rgba(0,0,0,.1);*/
+/*    border-bottom: 1px solid rgba(0,0,0,.1);*/
+    overflow: hidden;
+    position: relative;
+}
+/*.newSchedule-day > ul > li:last-child{
+    border-bottom: none;
+}*/
+.newSchedule-day07 > ul > li{
+    border-right: none;
+}
+.newSchedule-day > ul > li p{
+    margin-top: 22px;
+}
+
+.newSchedule-day > ul > li .new-scheduling {
+    vertical-align: middle;
+    width: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+.delete-scheduling{/*删除按钮*/
+    position: absolute;right: 0;
+    top: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.newSchedule-day > ul > li:hover .delete-scheduling{
+    visibility: visible;
+}
+
+
+
+.newSchedulingPopup{/*弹出层的内容*/
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 560px;
+    height:400px;
+    margin: -200px -280px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+    animation: scaleModel .2s ease-in;
+    -webkit-animation: scaleModel .2s ease-in;
+    -moz-animation: scaleModel .2s ease-in;
+    -ms-animation: scaleModel .2s ease-in;
+    -o-animation: scaleModel .2s ease-in;
+}
+
+.table-condensed thead{
+    visibility: hidden;
+}
+.new-scheduling-header{/*弹出层内容头部*/
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+.newSchedulingPopup > ul >li{
+    height: 50px;
+    line-height: 50px;
+}
+.newSchedulingPopup > ul >li label{
+    color: rgba(0,0,0,.5);
+}
+.newSchedulingPopup .new-scheduling-first{/*第一个span*/
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    font-size: 14px;
+    color: #000;
+}
+.newSchedulingPopup .new-scheduling-second{/*中间输入框*/
+    width: 214px;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.15);
+    color: #333;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 214px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.new-scheduling-check,.new-scheduling-check-yes{
+    position: relative;
+    left: 15px;
+    top: -3px;
+    width: 16px;
+}
+.newSchedulingPopup  .new-scheduling-check-yes{
+    top: 0;
+    color: #333;
+}
+
+
+.amc_popup_btn{/*按钮*/
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.amc_popup_btn > span{
+    display: inline-block;
+    float: left;
+    width:280px;
+    position: relative;
+    cursor: pointer;
+    color: #999;
+}
+.amc_popup_btn > span:first-child{
+    width: 279px;
+    border-right: 1px solid rgba(0,0,0,.1);
+    color: #00aaf0;
+}
+
+.amc_popup_btn > span:active{
+    left: 1px;
+    top: 1px;
+    opacity: .8;
+}
+
+.newSchedulingPopup > ul >li  .changeColorHover{
+    color: red;
+}
+
+#newSchedulePeople{
+    display: none;
+}
+
+#newScheduleBody #searchGroups  {
+    width: 96%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: none;
+    border-radius: 5px;
+}

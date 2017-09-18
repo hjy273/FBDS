@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>搜索框</title>
+<link rel="stylesheet" href="complete.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="complete.js"></script>
+<script type="text/javascript">
+var proposals = ['百度1', '百度2', '百度3', '百度4', '百度5', '百度6', '百度7','百度','新浪'];
+
+$(document).ready(function(){
+	$('#search-form').complete({
+		searchIn:function(val){//传入输入值，返回匹配值
+			/* var reg = /^[\u4F00-\u9FA5\uF900-\uFA2D]/;
+			return reg.test(val); */
+			var word = "^"+val+".*";
+			var rs = [];
+			$.each(proposals,function(i,n){
+				if(n.match(word)){
+					rs.push(n);
+				}
+			});
+			return rs;
+		},
+		width:400,
+		height: 30,
+		submitIn: function(text){//搜索选定的值
+			alert(text);		
+		}
+	});
+});
+</script>
+</head>
+<body>
+		<div id="search-form"></div>
+</body>
+</html>

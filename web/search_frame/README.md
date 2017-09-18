@@ -1,0 +1,1 @@
+该项目是在https://github.com/lorecioni的search hints上进行改编的,我仿照淘宝的搜索框进行了源码修改。

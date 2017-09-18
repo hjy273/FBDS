@@ -1,0 +1,41 @@
+body {
+    background: #f4f7f8;
+}
+#courseManage{
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+}
+.courseSystemSearch{
+    width: 90%;
+    margin:  20px auto;
+}
+.courseSystemSearchLi{
+    display: inline-block;
+    margin-left: 1%;
+}
+.courseSystemSearchLi input{
+    width: 220px;
+    color: #333;
+    height: 32px;
+    padding-left: 6px;
+    background: #fff;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.courseSearchBtn{
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    position: relative;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.courseSearchBtn:active{
+    opacity: .8;
+}

@@ -1,0 +1,514 @@
+html{
+    font-size:62.5%;
+    font-family:Tahoma,Arial,”Helvetica Neue“,”Hiragino Sans GB”,Simsun,sans-self;
+}
+ul,li{
+    list-style: none;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+.scss{
+    float: left;
+}
+body {
+    font-family: "Microsoft YaHei";
+}
+
+:focus {
+    outline:none;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-underline: none;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input{
+    font-size:1.3rem;
+    color: rgba(0,0,0,0.8);
+}
+input, select {
+    vertical-align:middle;
+}
+
+:-webkit-input-placeholder { /* WebKit browsers */
+    color: #8899a6;font-family: "Microsoft YaHei";
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8899a6;font-family: "Microsoft YaHei";
+}
+:-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #8899a6;font-family: "Microsoft YaHei";
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #8899a6;font-family: "Microsoft YaHei";
+}
+
+
+
+@keyframes scaleModel {/*放大的动画*/
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-webkit-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-moz-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-ms-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+@-o-keyframes scaleModel {
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1)}
+    100%{transform: scale(1,1)}
+}
+
+
+
+.amc_popup,.amc_popup_limit{/*弹出层*/
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.amc_popup_content,.amc_popup_limit_content{
+    display: none;
+    width: 315px;
+    height: 204px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -102px -158px;
+    animation: scaleModel .2s ease-in;
+    -webkit-animation: scaleModel .2s ease-in;
+    -moz-animation: scaleModel .2s ease-in;
+    -ms-animation: scaleModel .2s ease-in;
+    -o-animation: scaleModel .2s ease-in;
+}
+.amc_popup_content  > p{
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #363e4e;
+}
+.amc_popup_content .amc_tips{
+    color:#616874;
+}
+.amc_popup_content .amc_tips i{
+    font-size: 2.2rem;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+    color: #ed805e;
+}
+.amc_popup_content .amc_popup_btn{/*按钮*/
+    width: 100%;
+    height: 60px;
+    line-height: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.6rem;
+}
+.amc_popup_content .amc_popup_btn{
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+.amc_popup_content .amc_popup_btn span{
+    display: block;
+    float: left;
+    width: 157px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    color: #00aaef;
+    position: relative;
+}
+.amc_popup_content .amc_popup_btn span:last-child{
+    border-left: 1px solid rgba(0,0,0,0.15);
+    color: rgba(0,0,0,0.56);
+}
+.amc_popup_content .amc_popup_btn span label{
+    cursor: pointer;
+}
+.amc_popup_content .amc_popup_btn span:active label{
+    display: inline-block;
+    padding-left: 1px;
+    padding-top: 1px;
+}
+
+
+.reset_color{
+    color:#f39800;
+}
+
+
+
+
+
+
+.limit_btn{/*权限按钮*/
+    /*     padding: 3px 5px ; */
+    border-radius: 4px;
+    background: #00aaef;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+}
+.limit_btn:active{
+    opacity: 0.8;
+    left: 1px;
+    top: 1px;
+}
+
+
+
+
+.amc_popup_limit_content{/*内容展示*/
+    width: 560px;
+    height: 444px;
+    margin: -222px -280px;
+}
+.amc_popup_limit_content > p:first-child{/*文字显示*/
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #303030;
+}
+.amc_popup_limit_content > div{/*中间选择*/
+    font-size: 1.4rem;
+    max-height:344px ;
+    overflow-y: auto;
+}
+.amc_popup_limit_content .amc_popup_limit_two{
+    width: 80%;
+    margin: 0 auto;
+}
+.amc_popup_limit_content > div li{
+    float: left;
+    width: 25%;
+    height: 48px;
+    line-height: 48px;
+    overflow-x: auto;
+    text-align: center;
+}
+.amc_popup_limit_content .amc_popup_limit_first  > ul >li{
+    float: none;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: left;
+}
+.amc_popup_limit_content > div li > span{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 5px;
+    border: 1px solid rgba(0,0,0,0.1)
+}
+.amc_popup_limit_content > div li > span img{
+    vertical-align: middle;
+    width: 10px;
+    padding-left: 2px;
+    opacity: 0;
+
+}
+.amc_popup_limit_content > div li > span .imgHover{/*选中钩钩的动画显示*/
+    opacity: 1;
+    animation: scaleImg .4s ease-in;
+    -webkit-animation: scaleImg 0.4s ease-in;
+    -moz-animation: scaleImg .4s ease-in;
+    -ms-animation: scaleImg .4s ease-in;
+    -o-animation: scaleImg .4s ease-in;
+    transition: all .3s ease-out;
+}
+.amc_limit_btn{
+    height: 49px;
+    line-height:49px;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.amc_limit_btn > button{
+    display:block;
+    height: 100%;
+    line-height: 49px;
+    font-size: 1.6rem;
+    font-family: "Microsoft Yahei";
+    float: left;
+    text-align: center;
+    width: 49.5%;
+    border: none;
+    background: none;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    cursor: pointer;
+    color: rgba(0,0,0,0.8);
+
+}
+.amc_limit_btn > button:first-child{
+    border-right: 1px solid rgba(0,0,0,0.15);
+    color: #00aaef;
+}
+.amc_limit_btn > button label{
+    position: relative;
+    cursor: pointer;
+}
+.amc_limit_btn > button:active label{
+    top: 1px;
+    left: 1px;
+}
+
+
+@keyframes scaleImg {/*钩钩放大的动画*/
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(1)}
+}
+@-webkit-keyframes scaleImg {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(1)}
+}
+@-moz-keyframes scaleImg {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(1)}
+}
+@-ms-keyframes scaleImg {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(1)}
+}
+@-o-keyframes scaleImg {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(1)}
+}
+
+
+label{
+    font-weight:normal;
+}
+
+
+.userTitle{/*title*/
+    height: 54px;
+    line-height: 54px;
+    font-size: 1.4rem;
+    color: rgba(44,62,80,0.7);
+    width:96%;
+    margin-left:2%;
+    position: relative;
+    z-index: 3;
+}
+.userTitle .amc_change_url{
+    color:rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.userTitle .amc_change_url:hover{
+    color: #00aaef;
+}
+
+
+
+
+.amc_loading_box{
+    /*    display: none;*/
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*    line-height: 100vh;*/
+    text-align: center;
+    background:#f4f7f8;
+}
+.amc_loading_box img{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -60px -50px;
+    opacity: 0.9;
+    vertical-align: middle;
+}
+.amc_loading_box p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 30px;
+    margin:40px -50%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #48a4d4;
+    opacity: 0.8;
+}
+
+
+
+.amc_page_load,.amc_page_load_delay{
+    position: relative;
+    top: -20px;
+    opacity: 0;
+}
+
+
+.amc_body_test_tips{/*提示文字*/
+    display: none;
+    padding:0 10px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    background: #00aaef;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    z-index:10002;
+    top:50%;
+    left: 50%;
+    margin: -16px -100px;
+}
+
+
+
+.resetBtn{/* 重置按钮 */
+    display: inline-block;
+    position:relative;
+    top:4px;
+    left:160px;
+    font-size:24px;
+    transition:all .3s linear;
+    opacity:0.7;
+    color:#b0b1b1;
+}
+.resetBtn:hover{
+    transition:all .3s linear;
+    opacity:1;
+}
+
+
+
+.amc_body_test_tips{/*提示文字*/
+    display: none;
+    width: 200px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    background: #00aaef;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin: -16px -100px;
+}

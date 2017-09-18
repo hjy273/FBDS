@@ -1,0 +1,77 @@
+.login_Content ul{
+    margin-top: 10px;
+}
+
+.login_Content li{
+    height: 60px;
+    line-height:  60px;
+}
+.login_Content li span{
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 20%;
+    text-align: left;
+    margin-left: 2%;
+}
+.login_Content li input{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    box-shadow: none;
+    border-radius: 0;
+    width: 65%;
+    margin-left: 1%;
+    padding-left: 2%;
+    height: 32px;
+}
+.two_btns{
+    width: 88%;
+}
+.two_btns button{
+    width: 100%;
+}
+
+
+.amc_alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.amc_alert >div{
+    width: 322px;
+    height: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -95px -161px;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 99999;
+}
+.amc_alert >div img{
+    width: 24px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.amc_alert >div ul{
+    height: 100px;
+    margin-top: 45px;
+}
+.amc_alert >div li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.amc_alert >div li label{
+    cursor: pointer;
+    color: #00aaef;
+    margin-left: 5px;
+}
+.amc_alert >div li label:hover{
+    opacity: 0.75;
+}

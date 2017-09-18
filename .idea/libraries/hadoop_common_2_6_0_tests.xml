@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="hadoop-common-2.6.0-tests">
+    <CLASSES>
+      <root url="jar:///usr/local/lib/hadoop/share/hadoop/common/hadoop-common-2.6.0-tests.jar!/" />
+      <root url="jar:///usr/local/lib/hadoop/share/hadoop/common/hadoop-common-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,29 @@
+.dataContent div > ul li{
+    width: 16.5%;
+}
+.dataShowList {
+    top: 0;
+}
+.dataShowList .searchGroups .input-prepend .searchBtn{
+    width: 160px;
+    height: 24px;
+    line-height: 24px;
+    background: #00aaef;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.dataShowList .searchGroups .input-prepend .searchBtn:active{
+    opacity: .8;
+    top: 1px;
+    left: 1px;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+    width: 50.06%;
+}
+.searchGroups .input-group .inputGroups{
+    width: 20%;
+}
